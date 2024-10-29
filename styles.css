@@ -22,7 +22,7 @@
 .container{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,7 @@
     display: flex;
     background-color: var(--White);
     border-radius: 50px;
+    
 }
 .calculator{
     width: 50%;
@@ -228,29 +229,33 @@ input[type=radio]{
     font-weight: 400;
     color: var(--Slate-700);
 }
+
 .calc{
     border-radius: 30px;
     border: none;
     background-color: var(--Lime);
     display: flex;
-    /* justify-content: space-between  ; */
-    gap: 8px;  
+    justify-content: center;
+    gap: 6px;  
     padding: 10px;
-    width: 224px;
+    width: 70%;
     /* height: 40px; */
     margin-top: 20px;
     cursor: pointer;
+    text-align: center;
 }
+
 .calc span{
     font-size: 14px;
-    padding: 6px;
+    padding: px;
     color: var(--Slate-900);
     font-weight: 700;
+    margin-right: 0;
 }
 .calc .icon{
     width: 20px;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin-left: px;
+    margin-top: px;
 }
 .empty-result img{
     width: 50%;
@@ -367,10 +372,11 @@ input[type=radio]:checked{
 .field{
     display: flex;
 }
+
 @media (max-width: 850px){
     .container{
         width: 100%;
-        height: 200vh;
+        height: auto;
         overflow: hidden;
         display: block;
         justify-content: center;
@@ -407,21 +413,31 @@ input[type=radio]:checked{
         
     }
     .calc{
+        border-radius: 30px;
+        border: none;
+        background-color: var(--Lime);
+        display: flex;
+        justify-content: center;
+        gap: 0px;  
+        padding: 10px;
         width: 100%;
-        gap: 0px;
-
+        /* height: 40px; */
+        margin-top: 20px;
+        cursor: pointer;
+        text-align: center;
     }
+    
     .calc span{
         font-size: 14px;
-        padding: 6px;
+        padding: px;
         color: var(--Slate-900);
         font-weight: 700;
-        margin-right: 40px;
+        margin-right: 0;
     }
     .calc .icon{
         width: 20px;
-        margin-left: 68px;
-        margin-top: 5px;
+        margin-left: px;
+        margin-top: px;
     }
     .result-amount{
         background-color: var(--Slate-1000);
